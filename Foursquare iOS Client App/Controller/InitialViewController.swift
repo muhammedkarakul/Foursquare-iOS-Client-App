@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InitialViewController.swift
 //  Foursquare iOS Client App
 //
 //  Created by Muhammed Karakul on 25.01.2021.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Initial"
+        view.backgroundColor = .white
     }
-
-
 }
 

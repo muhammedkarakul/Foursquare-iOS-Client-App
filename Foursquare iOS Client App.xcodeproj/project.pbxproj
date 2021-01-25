@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5B25BEC54D00F3F242 /* AppDelegate.swift */; };
-		57890B6025BEC54D00F3F242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5F25BEC54D00F3F242 /* ViewController.swift */; };
-		57890B6325BEC54D00F3F242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6125BEC54D00F3F242 /* Main.storyboard */; };
+		57890B6025BEC54D00F3F242 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5F25BEC54D00F3F242 /* InitialViewController.swift */; };
 		57890B6525BEC54F00F3F242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6425BEC54F00F3F242 /* Assets.xcassets */; };
 		57890B6825BEC54F00F3F242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6625BEC54F00F3F242 /* LaunchScreen.storyboard */; };
 		E796E9E6DC62C3C24B68CC24 /* Pods_Foursquare_iOS_Client_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D67F9304DA13D5BE17365 /* Pods_Foursquare_iOS_Client_App.framework */; };
@@ -19,8 +18,7 @@
 		4D9A0DBE4783D806D0D2A3DB /* Pods-Foursquare iOS Client App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foursquare iOS Client App.release.xcconfig"; path = "Target Support Files/Pods-Foursquare iOS Client App/Pods-Foursquare iOS Client App.release.xcconfig"; sourceTree = "<group>"; };
 		57890B5825BEC54D00F3F242 /* Foursquare iOS Client App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foursquare iOS Client App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57890B5B25BEC54D00F3F242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57890B5F25BEC54D00F3F242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57890B6225BEC54D00F3F242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57890B5F25BEC54D00F3F242 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		57890B6425BEC54F00F3F242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57890B6725BEC54F00F3F242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57890B6925BEC54F00F3F242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +44,6 @@
 				8AB4BF357E5539D8F6BF8E53 /* Pods-Foursquare iOS Client App.debug.xcconfig */,
 				4D9A0DBE4783D806D0D2A3DB /* Pods-Foursquare iOS Client App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,7 +89,6 @@
 		57890B7125BED68200F3F242 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				57890B6125BEC54D00F3F242 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,7 +96,7 @@
 		57890B7225BED69000F3F242 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				57890B5F25BEC54D00F3F242 /* ViewController.swift */,
+				57890B5F25BEC54D00F3F242 /* InitialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,7 +170,6 @@
 			files = (
 				57890B6825BEC54F00F3F242 /* LaunchScreen.storyboard in Resources */,
 				57890B6525BEC54F00F3F242 /* Assets.xcassets in Resources */,
-				57890B6325BEC54D00F3F242 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57890B6025BEC54D00F3F242 /* ViewController.swift in Sources */,
+				57890B6025BEC54D00F3F242 /* InitialViewController.swift in Sources */,
 				57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,14 +230,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		57890B6125BEC54D00F3F242 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57890B6225BEC54D00F3F242 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57890B6625BEC54F00F3F242 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
