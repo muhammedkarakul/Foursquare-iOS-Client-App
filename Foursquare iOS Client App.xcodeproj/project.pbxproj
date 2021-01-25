@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5B25BEC54D00F3F242 /* AppDelegate.swift */; };
-		57890B5E25BEC54D00F3F242 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5D25BEC54D00F3F242 /* SceneDelegate.swift */; };
 		57890B6025BEC54D00F3F242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5F25BEC54D00F3F242 /* ViewController.swift */; };
 		57890B6325BEC54D00F3F242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6125BEC54D00F3F242 /* Main.storyboard */; };
 		57890B6525BEC54F00F3F242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6425BEC54F00F3F242 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		57890B5825BEC54D00F3F242 /* Foursquare iOS Client App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foursquare iOS Client App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57890B5B25BEC54D00F3F242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57890B5D25BEC54D00F3F242 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		57890B5F25BEC54D00F3F242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57890B6225BEC54D00F3F242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57890B6425BEC54F00F3F242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		57890B5A25BEC54D00F3F242 /* Foursquare iOS Client App */ = {
 			isa = PBXGroup;
 			children = (
+				57890B7225BED69000F3F242 /* Controller */,
+				57890B7125BED68200F3F242 /* View */,
+				57890B7025BED65F00F3F242 /* Supporting Files */,
+			);
+			path = "Foursquare iOS Client App";
+			sourceTree = "<group>";
+		};
+		57890B7025BED65F00F3F242 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				57890B5B25BEC54D00F3F242 /* AppDelegate.swift */,
-				57890B5D25BEC54D00F3F242 /* SceneDelegate.swift */,
-				57890B5F25BEC54D00F3F242 /* ViewController.swift */,
-				57890B6125BEC54D00F3F242 /* Main.storyboard */,
 				57890B6425BEC54F00F3F242 /* Assets.xcassets */,
 				57890B6625BEC54F00F3F242 /* LaunchScreen.storyboard */,
 				57890B6925BEC54F00F3F242 /* Info.plist */,
 			);
-			path = "Foursquare iOS Client App";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57890B7125BED68200F3F242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57890B6125BEC54D00F3F242 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57890B7225BED69000F3F242 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57890B5F25BEC54D00F3F242 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +160,6 @@
 			files = (
 				57890B6025BEC54D00F3F242 /* ViewController.swift in Sources */,
 				57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */,
-				57890B5E25BEC54D00F3F242 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +307,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Foursquare iOS Client App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Foursquare iOS Client App/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +326,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Foursquare iOS Client App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Foursquare iOS Client App/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
