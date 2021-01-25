@@ -7,11 +7,10 @@
 
 import UIKit
 
-final class InitialViewController: UIViewController {
+final class InitialViewController: CustomViewController<InitialView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Initial"
-        view.backgroundColor = .white
     }
 }
 
