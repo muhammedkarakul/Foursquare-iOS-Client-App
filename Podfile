@@ -9,5 +9,10 @@ target 'Foursquare iOS Client App' do
   inhibit_all_warnings!
 
   # Pods for Foursquare iOS Client App
+
+  # Layout
   pod 'SnapKit'
+  
+  # Network
+  pod 'Alamofire'
 end

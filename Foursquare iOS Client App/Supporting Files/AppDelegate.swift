@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func createWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let initialViewController = InitialViewController()
+        let initialViewController = VenueSearchTableViewController()
         let navigationController = UINavigationController(rootViewController: initialViewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

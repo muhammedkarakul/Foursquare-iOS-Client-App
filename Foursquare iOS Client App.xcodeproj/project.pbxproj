@@ -10,9 +10,11 @@
 		571F98B825BEDEB10089E7AA /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98B725BEDEB10089E7AA /* CustomViewController.swift */; };
 		571F98CC25BEDF8A0089E7AA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98CB25BEDF890089E7AA /* CustomView.swift */; };
 		571F98D225BEDFF60089E7AA /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98D125BEDFF60089E7AA /* Layoutable.swift */; };
-		571F98DC25BEE7E60089E7AA /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98DB25BEE7E60089E7AA /* InitialView.swift */; };
+		571F98F925BEFB510089E7AA /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98F825BEFB510089E7AA /* FoursquareAPI.swift */; };
+		571F993425BFFD730089E7AA /* VenueSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F993325BFFD730089E7AA /* VenueSearchRequest.swift */; };
+		57385B8225C1506C004F2EF8 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B8125C1506C004F2EF8 /* CustomTableViewController.swift */; };
 		57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5B25BEC54D00F3F242 /* AppDelegate.swift */; };
-		57890B6025BEC54D00F3F242 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5F25BEC54D00F3F242 /* InitialViewController.swift */; };
+		57890B6025BEC54D00F3F242 /* VenueSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5F25BEC54D00F3F242 /* VenueSearchTableViewController.swift */; };
 		57890B6525BEC54F00F3F242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6425BEC54F00F3F242 /* Assets.xcassets */; };
 		57890B6825BEC54F00F3F242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57890B6625BEC54F00F3F242 /* LaunchScreen.storyboard */; };
 		E796E9E6DC62C3C24B68CC24 /* Pods_Foursquare_iOS_Client_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D67F9304DA13D5BE17365 /* Pods_Foursquare_iOS_Client_App.framework */; };
@@ -23,10 +25,13 @@
 		571F98B725BEDEB10089E7AA /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		571F98CB25BEDF890089E7AA /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		571F98D125BEDFF60089E7AA /* Layoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
-		571F98DB25BEE7E60089E7AA /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		571F98F825BEFB510089E7AA /* FoursquareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
+		571F993325BFFD730089E7AA /* VenueSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchRequest.swift; sourceTree = "<group>"; };
+		571F993725C003D50089E7AA /* Foursquare iOS Client App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Foursquare iOS Client App.entitlements"; sourceTree = "<group>"; };
+		57385B8125C1506C004F2EF8 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		57890B5825BEC54D00F3F242 /* Foursquare iOS Client App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foursquare iOS Client App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57890B5B25BEC54D00F3F242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57890B5F25BEC54D00F3F242 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		57890B5F25BEC54D00F3F242 /* VenueSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchTableViewController.swift; sourceTree = "<group>"; };
 		57890B6425BEC54F00F3F242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57890B6725BEC54F00F3F242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57890B6925BEC54F00F3F242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		571F98B625BEDE2B0089E7AA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				571F98EF25BEEE1E0089E7AA /* Network */,
 				571F98CF25BEDFC90089E7AA /* Protocol */,
 				571F98CE25BEDFB90089E7AA /* Custom */,
 			);
@@ -69,6 +75,7 @@
 			children = (
 				571F98B725BEDEB10089E7AA /* CustomViewController.swift */,
 				571F98CB25BEDF890089E7AA /* CustomView.swift */,
+				57385B8125C1506C004F2EF8 /* CustomTableViewController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -84,18 +91,34 @@
 		571F98D925BEE7CB0089E7AA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				571F98DA25BEE7D60089E7AA /* Initial */,
+				571F98DA25BEE7D60089E7AA /* VenueSearch */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		571F98DA25BEE7D60089E7AA /* Initial */ = {
+		571F98DA25BEE7D60089E7AA /* VenueSearch */ = {
 			isa = PBXGroup;
 			children = (
-				57890B7125BED68200F3F242 /* View */,
 				57890B7225BED69000F3F242 /* Controller */,
 			);
-			path = Initial;
+			path = VenueSearch;
+			sourceTree = "<group>";
+		};
+		571F98EF25BEEE1E0089E7AA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				571F993225BFFD570089E7AA /* VenueSearch */,
+				571F98F825BEFB510089E7AA /* FoursquareAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		571F993225BFFD570089E7AA /* VenueSearch */ = {
+			isa = PBXGroup;
+			children = (
+				571F993325BFFD730089E7AA /* VenueSearchRequest.swift */,
+			);
+			path = VenueSearch;
 			sourceTree = "<group>";
 		};
 		57890B4F25BEC54D00F3F242 = {
@@ -119,6 +142,7 @@
 		57890B5A25BEC54D00F3F242 /* Foursquare iOS Client App */ = {
 			isa = PBXGroup;
 			children = (
+				571F993725C003D50089E7AA /* Foursquare iOS Client App.entitlements */,
 				571F98D925BEE7CB0089E7AA /* Screens */,
 				57890B7025BED65F00F3F242 /* Supporting Files */,
 			);
@@ -137,18 +161,10 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		57890B7125BED68200F3F242 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				571F98DB25BEE7E60089E7AA /* InitialView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		57890B7225BED69000F3F242 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				57890B5F25BEC54D00F3F242 /* InitialViewController.swift */,
+				57890B5F25BEC54D00F3F242 /* VenueSearchTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,8 +293,10 @@
 				571F98B825BEDEB10089E7AA /* CustomViewController.swift in Sources */,
 				571F98CC25BEDF8A0089E7AA /* CustomView.swift in Sources */,
 				571F98D225BEDFF60089E7AA /* Layoutable.swift in Sources */,
-				571F98DC25BEE7E60089E7AA /* InitialView.swift in Sources */,
-				57890B6025BEC54D00F3F242 /* InitialViewController.swift in Sources */,
+				571F98F925BEFB510089E7AA /* FoursquareAPI.swift in Sources */,
+				571F993425BFFD730089E7AA /* VenueSearchRequest.swift in Sources */,
+				57890B6025BEC54D00F3F242 /* VenueSearchTableViewController.swift in Sources */,
+				57385B8225C1506C004F2EF8 /* CustomTableViewController.swift in Sources */,
 				57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,9 +437,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Foursquare iOS Client App/Foursquare iOS Client App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3PB4F7F3W;
 				INFOPLIST_FILE = "$(SRCROOT)/Foursquare iOS Client App/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,9 +459,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Foursquare iOS Client App/Foursquare iOS Client App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3PB4F7F3W;
 				INFOPLIST_FILE = "$(SRCROOT)/Foursquare iOS Client App/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
