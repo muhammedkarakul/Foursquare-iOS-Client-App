@@ -8,8 +8,8 @@
 import Alamofire
 
 class FoursquareAPI {
-    private let clientId = "0AA4YY5CJGMQHNUARRQC53XVYYMB0DT5BIPOWKCIJMXXM2EI"
-    private let clientSecret = "GAVUJSWO151O0MMTQ51UVUTTTQ2W1ZVXIPWFWTKGNFYZ0GC0"
+    private let clientId = "Your foursquare client id."
+    private let clientSecret = "Your foursquare client secret."
     private let baseURLString = "https://api.foursquare.com/v2/venues"
     
     func searchVenue(query: String) {
