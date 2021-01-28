@@ -15,4 +15,5 @@ target 'Foursquare iOS Client App' do
   
   # Network
   pod 'Alamofire'
+  pod 'Kingfisher'
 end

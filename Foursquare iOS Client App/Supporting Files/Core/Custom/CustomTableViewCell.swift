@@ -9,8 +9,8 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell, Layoutable {
     // MARK: - Init
-    init() {
-        super.init(style: .default, reuseIdentifier: nil)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         linkInteractor()
         configureAppearance()
         prepareLayout()

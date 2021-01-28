@@ -28,13 +28,16 @@ final class VenueSearchTableViewController: CustomTableViewController {
         super.linkInteractor()
         navigationItem.searchController = venueSearchController
         venueSearchController.searchBar.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(VenueTableViewCell.self, forCellReuseIdentifier: "venueTableViewCell")
     }
     
     override func configureAppearance() {
         super.configureAppearance()
         title = "Initial"
         navigationController?.navigationBar.prefersLargeTitles = true
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,8 +49,15 @@ final class VenueSearchTableViewController: CustomTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = venues[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "venueTableViewCell", for: indexPath) as! VenueTableViewCell
+        cell.venueName = venues[indexPath.row].name
+        FoursquareAPI.getVenueImage(venueId: venues[indexPath.row].id) { venueImageResponse, error in
+            if let error = error {
+                fatalError(error.localizedDescription)
+            }
+            guard let imageURL = venueImageResponse?.photos.items.first?.imageURL else { return }
+            cell.imageURL = imageURL
+        }
         return cell
     }
 }

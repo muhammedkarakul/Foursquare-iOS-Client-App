@@ -11,12 +11,16 @@
 		571F98CC25BEDF8A0089E7AA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98CB25BEDF890089E7AA /* CustomView.swift */; };
 		571F98D225BEDFF60089E7AA /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98D125BEDFF60089E7AA /* Layoutable.swift */; };
 		571F98F925BEFB510089E7AA /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F98F825BEFB510089E7AA /* FoursquareAPI.swift */; };
+		5737BEDE25C1AE330047F550 /* VenueImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737BEDD25C1AE330047F550 /* VenueImageResponse.swift */; };
+		5737BEE125C1AE760047F550 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737BEE025C1AE760047F550 /* Photos.swift */; };
+		5737BEE525C1AF0B0047F550 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737BEE425C1AF0B0047F550 /* Item.swift */; };
+		5737BEEB25C29F330047F550 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737BEEA25C29F330047F550 /* User.swift */; };
 		57385B8225C1506C004F2EF8 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B8125C1506C004F2EF8 /* CustomTableViewController.swift */; };
 		57385B9025C15DDD004F2EF8 /* VenueSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B8F25C15DDD004F2EF8 /* VenueSearchResponse.swift */; };
 		57385B9325C1608A004F2EF8 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B9225C1608A004F2EF8 /* BaseResponse.swift */; };
 		57385B9625C160C0004F2EF8 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B9525C160C0004F2EF8 /* Meta.swift */; };
 		57385B9925C1611C004F2EF8 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B9825C1611C004F2EF8 /* Venue.swift */; };
-		57385BA025C17BC7004F2EF8 /* VanueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B9F25C17BC7004F2EF8 /* VanueTableViewCell.swift */; };
+		57385BA025C17BC7004F2EF8 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385B9F25C17BC7004F2EF8 /* VenueTableViewCell.swift */; };
 		57385BA425C17BD9004F2EF8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57385BA325C17BD9004F2EF8 /* CustomTableViewCell.swift */; };
 		57890B5C25BEC54D00F3F242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5B25BEC54D00F3F242 /* AppDelegate.swift */; };
 		57890B6025BEC54D00F3F242 /* VenueSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57890B5F25BEC54D00F3F242 /* VenueSearchTableViewController.swift */; };
@@ -32,12 +36,16 @@
 		571F98D125BEDFF60089E7AA /* Layoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
 		571F98F825BEFB510089E7AA /* FoursquareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
 		571F993725C003D50089E7AA /* Foursquare iOS Client App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Foursquare iOS Client App.entitlements"; sourceTree = "<group>"; };
+		5737BEDD25C1AE330047F550 /* VenueImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueImageResponse.swift; sourceTree = "<group>"; };
+		5737BEE025C1AE760047F550 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		5737BEE425C1AF0B0047F550 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5737BEEA25C29F330047F550 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		57385B8125C1506C004F2EF8 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		57385B8F25C15DDD004F2EF8 /* VenueSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchResponse.swift; sourceTree = "<group>"; };
 		57385B9225C1608A004F2EF8 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		57385B9525C160C0004F2EF8 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		57385B9825C1611C004F2EF8 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
-		57385B9F25C17BC7004F2EF8 /* VanueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanueTableViewCell.swift; sourceTree = "<group>"; };
+		57385B9F25C17BC7004F2EF8 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
 		57385BA325C17BD9004F2EF8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		57890B5825BEC54D00F3F242 /* Foursquare iOS Client App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foursquare iOS Client App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57890B5B25BEC54D00F3F242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +127,8 @@
 		571F98EF25BEEE1E0089E7AA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5737BEDB25C199090047F550 /* VenueImage */,
+				57385BA625C18CFC004F2EF8 /* Base */,
 				571F993225BFFD570089E7AA /* VenueSearch */,
 				571F98F825BEFB510089E7AA /* FoursquareAPI.swift */,
 			);
@@ -129,19 +139,37 @@
 			isa = PBXGroup;
 			children = (
 				57385B8F25C15DDD004F2EF8 /* VenueSearchResponse.swift */,
-				57385B9225C1608A004F2EF8 /* BaseResponse.swift */,
-				57385B9525C160C0004F2EF8 /* Meta.swift */,
 				57385B9825C1611C004F2EF8 /* Venue.swift */,
 			);
 			path = VenueSearch;
 			sourceTree = "<group>";
 		};
+		5737BEDB25C199090047F550 /* VenueImage */ = {
+			isa = PBXGroup;
+			children = (
+				5737BEDD25C1AE330047F550 /* VenueImageResponse.swift */,
+				5737BEE025C1AE760047F550 /* Photos.swift */,
+				5737BEE425C1AF0B0047F550 /* Item.swift */,
+				5737BEEA25C29F330047F550 /* User.swift */,
+			);
+			path = VenueImage;
+			sourceTree = "<group>";
+		};
 		57385B9E25C17B9F004F2EF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				57385B9F25C17BC7004F2EF8 /* VanueTableViewCell.swift */,
+				57385B9F25C17BC7004F2EF8 /* VenueTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		57385BA625C18CFC004F2EF8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				57385B9225C1608A004F2EF8 /* BaseResponse.swift */,
+				57385B9525C160C0004F2EF8 /* Meta.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		57890B4F25BEC54D00F3F242 = {
@@ -313,14 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5737BEE525C1AF0B0047F550 /* Item.swift in Sources */,
 				57385B9025C15DDD004F2EF8 /* VenueSearchResponse.swift in Sources */,
-				57385BA025C17BC7004F2EF8 /* VanueTableViewCell.swift in Sources */,
+				57385BA025C17BC7004F2EF8 /* VenueTableViewCell.swift in Sources */,
+				5737BEDE25C1AE330047F550 /* VenueImageResponse.swift in Sources */,
 				57385B9925C1611C004F2EF8 /* Venue.swift in Sources */,
 				571F98B825BEDEB10089E7AA /* CustomViewController.swift in Sources */,
 				571F98CC25BEDF8A0089E7AA /* CustomView.swift in Sources */,
+				5737BEEB25C29F330047F550 /* User.swift in Sources */,
 				571F98D225BEDFF60089E7AA /* Layoutable.swift in Sources */,
 				57385B9625C160C0004F2EF8 /* Meta.swift in Sources */,
 				571F98F925BEFB510089E7AA /* FoursquareAPI.swift in Sources */,
+				5737BEE125C1AE760047F550 /* Photos.swift in Sources */,
 				57385B9325C1608A004F2EF8 /* BaseResponse.swift in Sources */,
 				57890B6025BEC54D00F3F242 /* VenueSearchTableViewController.swift in Sources */,
 				57385B8225C1506C004F2EF8 /* CustomTableViewController.swift in Sources */,
